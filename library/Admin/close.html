@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="openWin()">Open "myWindow"</button>
+<button onclick="closeWin()">Close "myWindow"</button>
+<a href="#" onclick = "javascript:self.close();">close</a>
+
+<script>
+var myWindow;
+
+function openWin() {
+//myWindow = window.open("", "myWindow", "width=200,height=100");
+  myWIndow=window.open("http://localhost/library/admin/", "myWindow", "width=200,height=100");
+    //myWindow.document.write("<p>This is 'myWindow'</p>");
+}
+
+function closeWin() {
+    myWindow.close();
+}
+</script>
+
+</body>
+</html>
